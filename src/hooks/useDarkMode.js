@@ -4,10 +4,10 @@ import { useLocalStorage } from './useLocalStorage';
 export const useDarkMode = initialValue => {
   // set up state and local storage key
   const [isDark, setIsDark] = useLocalStorage('isDark', initialValue);
-  
+
   // add class to body via DOM
   useEffect(() => {
-    const body = document.getElementsByTagName('body');
+    const body = document.querySelector('body');
     if (isDark) {
       body.classList.add('dark-mode');
     }
