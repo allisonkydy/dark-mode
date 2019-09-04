@@ -242,6 +242,30 @@ text-align: left;
   width: 50px;
 }
 
+.pagination-container {
+  margin-top: 30px;
+
+  p {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+
+  button {
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #f68819;
+    border-radius: 50px;
+    color: #f68819;
+    font-weight: bold;
+    outline: none;
+    margin: 0 10px;
+
+    &:hover {
+      background: papayawhip;
+    }
+  }
+}
+
 .dark-mode {
   color: #fff;
   background-color: #313843;
